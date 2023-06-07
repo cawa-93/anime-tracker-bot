@@ -17,6 +17,7 @@ export type ListNode = {
     /** MAL id */
     id: number
     title: string
+    num_episodes: number
     status: ListNodeStatus
 }
 

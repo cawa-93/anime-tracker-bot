@@ -5,6 +5,8 @@ import * as malApi from '../utils/platforms/mal/api.ts'
 type MALNode = {
     id: number
     title: string
+    num_episodes: number
+
 }
 type MALStatus = {
     status: | 'watching'
@@ -26,7 +28,7 @@ export class MyAnimeListListsTracker implements ListTracker {
 
     private async getUserAnimeList(): Promise<MALListItem[]> {
         const searchParams = new URLSearchParams({
-            fields: 'list_status',
+            fields: 'list_status,num_episodes',
             nsfw: 'true',
             limit: '1000',
         })
@@ -36,7 +38,8 @@ export class MyAnimeListListsTracker implements ListTracker {
         const results: MALListItem[] = []
 
         while (nextRequestEndpoint) {
-            const {data, paging} = await malApi.callApi(nextRequestEndpoint)
+            const {data, paging, error} = await malApi.callApi(nextRequestEndpoint)
+            console.log({nextRequestEndpoint, error, MalConfig})
             // TODO: Додати обробку помилки
             results.push(...data)
             nextRequestEndpoint = paging.next?.replace(malApi.apiBasePoint, '')
@@ -70,6 +73,7 @@ export class MyAnimeListListsTracker implements ListTracker {
             list.push({
                 id: item.node.id,
                 title: item.node.title,
+                num_episodes: item.node.num_episodes,
                 status: {
                     kind: this.convertStatus(item.list_status.status),
                     episodes: {

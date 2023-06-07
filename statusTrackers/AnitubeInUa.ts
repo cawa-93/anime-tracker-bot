@@ -1,10 +1,10 @@
-import {Status, StatusTracker} from "./contracts.ts";
+import {AnimeState, Platforms, StatusTracker} from "./contracts.ts";
 import {ListNode} from "../listsTrackers/contracts.ts";
 import {DOMParser, type Element, type HTMLDocument} from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
 
 
 function closest(childEl: Element, selectorString: string): Element | null {
-    const { match } = childEl.ownerDocument!._nwapi; // See note below
+    const {match} = childEl.ownerDocument!._nwapi; // See note below
     let el: Element | null = childEl;
     do {
         // Note: Not using `el.matches(selectorString)` because on a browser if you override
@@ -36,14 +36,31 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
         })
     }
 
+    private parseEpisodesNumbers(str: string): AnimeState["episodes"] {
+        const [_, releasedStr, totalStr] = str.match(/(?<=Серій:\s*)([0-9]+)\s*і?зі?\s*([0-9]+|[ХX]+)/i) || []
+
+
+        const released = parseInt(releasedStr)
+        const total = isNaN(parseInt(totalStr)) ? undefined : parseInt(totalStr)
+
+        if (isNaN(released)) {
+            throw new Error(`Невдалось розпарсити кількість серіїй для аніме`)
+        }
+
+        return {
+            released,
+            total
+        }
+    }
+
     /**
      * Пошук цільового блоку аніме за відповідним посиланням яке повинно містити точну оригінальну назву
      * @param document
-     * @param title
+     * @param originTitle
      * @private
      */
-    private getStatusFromSearchPage(document: HTMLDocument, title: string): string | undefined {
-        const targetLink = document.querySelector(`article.story a[href$="${title.toLowerCase().replace(/\s+/g, '-')}.html"]`)
+    private getStatusFromSearchPage(document: HTMLDocument, originTitle: string): AnimeState | undefined {
+        const targetLink = document.querySelector(`article.story a[href$="${originTitle.toLowerCase().replace(/\s+/g, '-')}.html"]`)
 
         if (!targetLink) {
             return undefined
@@ -51,17 +68,29 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
 
         const targetStory = closest(targetLink, 'article.story')
 
-        return targetStory?.querySelector('.story_infa')?.textContent || undefined
+        if (!targetStory) {
+            return undefined
+        }
+
+        const episodes = this.parseEpisodesNumbers(targetStory?.querySelector('.story_infa')?.textContent || '')
+        const title = targetStory.querySelector('h2').textContent.trim()
+
+        return {
+            episodes,
+            title,
+            url: targetLink.getAttribute("href")!
+        }
     }
 
 
-    private async getStatusByLookingOnAnimePages(document: HTMLDocument, title: string) {
+    private async getStatusByLookingOnAnimePages(document: HTMLDocument, originTitle: string): Promise<AnimeState | undefined> {
         const urls: string[] = [...document.querySelectorAll('article.story h2 a')].map(el => el.getAttribute("href"))
         for (const url of urls) {
             const html = await fetch(url).then(r => r.text())
-            if (!html.includes(`https://twitter.com/intent/tweet?text=${title}%20`)) {
+            if (!html.includes(`https://twitter.com/intent/tweet?text=${originTitle}%20`)) {
                 continue
             }
+
 
             const document = new DOMParser().parseFromString(html, "text/html")
 
@@ -69,14 +98,21 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
                 throw new Error('Не вдалось розпарсити сторінку аніме', {cause: {document}})
             }
 
-            return document.querySelector('article.story .rcol > .story_c_r').textContent
+            const episodes = this.parseEpisodesNumbers(document.querySelector('article.story .rcol > .story_c_r').textContent)
+            const title = document.querySelector('article.story .rcol > h2').textContent.trim()
+
+            return {
+                episodes,
+                url,
+                title
+            }
         }
 
         return undefined
     }
 
 
-    async getStatus({title}: ListNode): Promise<Status> {
+    async getStatus({title}: ListNode): Promise<AnimeState> {
         console.log('[AnitubeInUa][getStatus]', title)
 
         const normalizedTitle = title.replace(/[^a-z0-9-_\s]/ig, '')
@@ -88,28 +124,12 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
             throw new Error('Не вдалось розпарсити сторінку з результатами пошуку', {cause: {document}})
         }
 
-        const info = this.getStatusFromSearchPage(document, normalizedTitle) || await this.getStatusByLookingOnAnimePages(document, normalizedTitle)
+        const animeState = this.getStatusFromSearchPage(document, normalizedTitle) || await this.getStatusByLookingOnAnimePages(document, normalizedTitle)
 
-        if (!info) {
+        if (!animeState) {
             throw new Error(`Невдалось знайти відповідне аніме за назвою "${title}" ("${normalizedTitle}")`)
         }
 
-
-
-        const [_, releasedStr, totalStr] = info.match(/(?<=Серій: )([0-9]+) з ([0-9]+|XX)/) || []
-
-        const released = parseInt(releasedStr)
-        const total = isNaN(parseInt(totalStr)) ? undefined : parseInt(totalStr)
-
-        if (isNaN(released)) {
-            throw new Error(`Невдалось розпарсити кількість серіїй для аніме "${title}" ("${normalizedTitle}}")`)
-        }
-
-        return {
-            episodes: {
-                released,
-                total
-            }
-        }
+        return animeState
     }
 }

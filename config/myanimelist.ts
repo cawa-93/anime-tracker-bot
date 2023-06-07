@@ -1,3 +1,6 @@
-export const CLIENT_ID = '8819f39fa47c7ec0ba08cc8a01c97d21'
+import { load } from "https://deno.land/std/dotenv/mod.ts";
 
-export const USER_NAME = 'Kozack'
+const env = await load();
+
+export const CLIENT_ID = env['MAL_CLIENT_ID']
+export const USER_NAME = env['MAL_USER_NAME']
