@@ -16,25 +16,30 @@ for (const tracker1 of trackers) {
 
 type AnimeStatusMerged = {
     list: ListNode,
-    platforms: Record<Platforms, AnimeState>
+    platforms: Record<Platforms, AnimeState | undefined>
 }
 
 const anitubeTracker = new AnitubeInUaStatusTracker()
 
-const [merged, prevMergedState]: [AnimeStatusMerged[], AnimeStatusMerged[]] = await Promise.all([
-    Promise.all(
-        results.map(
-            async list => ({
-                list,
-                platforms: {
-                    [Platforms.anitubeinua]: await anitubeTracker.getStatus(list)
-                }
-            })
-        )
-    ),
-    Deno.readTextFile('./merged-state.json').then(s => JSON.parse(s || '[]'))
-])
 
+const prevMergedState: AnimeStatusMerged[] = await Deno.readTextFile('./merged-state.json').then(s => JSON.parse(s || '[]'))
+const merged: AnimeStatusMerged[] = []
+for (const list of results) {
+
+    // if (list.title !== 'Kono Subarashii Sekai ni Shukufuku wo! 3') {
+    //     continue
+    // }
+
+    console.group(list.title)
+    merged.push({
+        list,
+        platforms: {
+            [Platforms.anitubeinua]: await anitubeTracker.getStatus(list)
+        }
+    })
+    console.groupEnd()
+    // break
+}
 
 for (const currentState of merged) {
     const prevState = prevMergedState.find(s => s.list.id === currentState.list.id)
@@ -43,10 +48,11 @@ for (const currentState of merged) {
         const currentPlatformId = key as unknown as Platforms
         const platform = currentState.platforms[currentPlatformId];
         if (
+            platform &&
             (
-                (platform?.episodes?.released || 0) > (prevState?.platforms?.[currentPlatformId]?.episodes?.released || 0)
+                (platform.episodes?.released || 0) > (prevState?.platforms?.[currentPlatformId]?.episodes?.released || 0)
             )
-            && platform?.episodes.released > currentState.list.status.episodes.watched
+            && platform.episodes?.released > currentState.list.status.episodes.watched
         ) {
             if (currentState.list.status.kind === 'planned' && platform?.episodes.released < currentState.list.num_episodes) {
                 continue

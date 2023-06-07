@@ -22,5 +22,5 @@ export type AnimeState = {
 
 
 export interface StatusTracker {
-    getStatus(node: ListNode): Promise<AnimeState>
+    getStatus(node: ListNode): Promise<AnimeState | undefined>
 }

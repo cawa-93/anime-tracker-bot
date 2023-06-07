@@ -38,8 +38,7 @@ export class MyAnimeListListsTracker implements ListTracker {
         const results: MALListItem[] = []
 
         while (nextRequestEndpoint) {
-            const {data, paging, error} = await malApi.callApi(nextRequestEndpoint)
-            console.log({nextRequestEndpoint, error, MalConfig})
+            const {data, paging} = await malApi.callApi(nextRequestEndpoint)
             // TODO: Додати обробку помилки
             results.push(...data)
             nextRequestEndpoint = paging.next?.replace(malApi.apiBasePoint, '')
