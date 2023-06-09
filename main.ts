@@ -84,7 +84,6 @@ for (const listNode of results) {
                 platforms: state
             })
         }
-        break
     }
     catch (e) {
         await sendNotification(`Невдалось перевірити оновлення для аніме ${listNode.title} (id: ${listNode.id}): ${e}\n\n${e?.stack}`)
