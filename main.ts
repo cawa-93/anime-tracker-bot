@@ -53,7 +53,7 @@ for (const listNode of results) {
         let isNothingFound = true
 
         for (const [platformId, animeState] of state) {
-            if (isNothingFound && animeState !== undefined) {
+            if (animeState !== undefined) {
                 isNothingFound = false
             }
 
@@ -62,7 +62,7 @@ for (const listNode of results) {
             }
 
 
-            const currentReleased = prevMerged?.platforms.get(platformId)?.episodes.released || 0
+            const currentReleased = animeState.episodes.released
             const prevReleased = prevMerged?.platforms.get(platformId)?.episodes.released || 0
 
             if (currentReleased > prevReleased && currentReleased > listNode.status.episodes.watched) {
@@ -70,7 +70,9 @@ for (const listNode of results) {
                     continue
                 }
 
-                await sendNotification(`${animeState.title}\n\nВийшла ${animeState.episodes.released}-та серія\n\n${animeState.url}`)
+                const episodesText = currentReleased === listNode.num_episodes ? (listNode.num_episodes > 1 ? `🎉 Вийшли всі серії` : '🎉 Реліз') : `Вийшла ${currentReleased}-та серія з ${listNode.num_episodes}`
+
+                await sendNotification(`${animeState.title}\n\n${episodesText}\n\n${animeState.url}`)
             }
         }
 
@@ -82,6 +84,7 @@ for (const listNode of results) {
                 platforms: state
             })
         }
+        break
     }
     catch (e) {
         await sendNotification(`Невдалось перевірити оновлення для аніме ${listNode.title} (id: ${listNode.id}): ${e}\n\n${e?.stack}`)
