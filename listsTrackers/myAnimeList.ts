@@ -6,6 +6,7 @@ type MALNode = {
     id: number
     title: string
     num_episodes: number
+    status: 'not_yet_aired' | 'finished_airing' | 'currently_airing'
 
 }
 type MALStatus = {
@@ -28,7 +29,7 @@ export class MyAnimeListListsTracker implements ListTracker {
 
     private async getUserAnimeList(): Promise<MALListItem[]> {
         const searchParams = new URLSearchParams({
-            fields: 'list_status,num_episodes',
+            fields: 'list_status,num_episodes,status',
             nsfw: 'true',
             limit: '1000',
         })
@@ -64,7 +65,10 @@ export class MyAnimeListListsTracker implements ListTracker {
         const animes = await this.getUserAnimeList()
 
         return  animes.reduce((list, item) => {
-            if (!(['watching', 'plan_to_watch'] as MALStatus['status'][]).includes(item.list_status.status)) {
+            if (
+                !(['watching', 'plan_to_watch'] as MALStatus['status'][]).includes(item.list_status.status)
+                || item.node.status === 'not_yet_aired'
+            ) {
                 return list
             }
 
