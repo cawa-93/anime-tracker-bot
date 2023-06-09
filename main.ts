@@ -1,69 +1,95 @@
 import {ListNode, ListTracker} from "./listsTrackers/contracts.ts";
 import {MyAnimeListListsTracker} from "./listsTrackers/myAnimeList.ts";
 import {AnitubeInUaStatusTracker} from "./statusTrackers/AnitubeInUa.ts";
-import {AnimeState, Platforms} from "./statusTrackers/contracts.ts";
+import {AnimeState, Platforms, StatusTracker} from "./statusTrackers/contracts.ts";
 import {sendNotification} from "./bot.ts";
+import superjson from 'npm:superjson'
 
 
-const trackers: ListTracker[] = [
+
+const listTrackers: ListTracker[] = [
     new MyAnimeListListsTracker()
 ]
 
-let results = []
-for (const tracker1 of trackers) {
+const stateTrackers: [Platforms, StatusTracker][] = [
+    [Platforms.anitubeinua, new AnitubeInUaStatusTracker()]
+]
+
+
+const results: ListNode[] = []
+for (const tracker1 of listTrackers) {
     results.push(...await tracker1.getLists())
 }
 
 type AnimeStatusMerged = {
     list: ListNode,
-    platforms: Record<Platforms, AnimeState | undefined>
+    platforms: Map<Platforms, AnimeState | undefined>
 }
 
-const anitubeTracker = new AnitubeInUaStatusTracker()
+type MergedMap = Map<AnimeStatusMerged['list']['id'], AnimeStatusMerged>
+
+const prevMergedState: MergedMap = await Deno.readTextFile('./merged-state.json').then(s => s.trim() ? superjson.parse(s) : new Map())
 
 
-const prevMergedState: AnimeStatusMerged[] = await Deno.readTextFile('./merged-state.json').then(s => JSON.parse(s || '[]'))
-const merged: AnimeStatusMerged[] = []
-for (const list of results) {
+async function getStates(node: ListNode) {
+    return new Map(
+        await Promise.all(
+            stateTrackers.map(async ([platformId, tracker]) => [platformId, await tracker.getStatus(node)] as const)
+        )
+    )
 
-    // if (list.title !== 'Kono Subarashii Sekai ni Shukufuku wo! 3') {
-    //     continue
-    // }
-
-    console.group(list.title)
-    merged.push({
-        list,
-        platforms: {
-            [Platforms.anitubeinua]: await anitubeTracker.getStatus(list)
-        }
-    })
-    console.groupEnd()
-    // break
 }
 
-for (const currentState of merged) {
-    const prevState = prevMergedState.find(s => s.list.id === currentState.list.id)
+const notFound: Map<ListNode['id'], ListNode> = new Map()
+const merged: MergedMap = new Map()
 
-    for (const key of Object.keys(currentState.platforms)) {
-        const currentPlatformId = key as unknown as Platforms
-        const platform = currentState.platforms[currentPlatformId];
-        if (
-            platform &&
-            (
-                (platform.episodes?.released || 0) > (prevState?.platforms?.[currentPlatformId]?.episodes?.released || 0)
-            )
-            && platform.episodes?.released > currentState.list.status.episodes.watched
-        ) {
-            if (currentState.list.status.kind === 'planned' && platform?.episodes.released < currentState.list.num_episodes) {
+
+for (const listNode of results) {
+    try {
+
+        const prevMerged = prevMergedState.get(listNode.id)
+        const state = await getStates(listNode)
+
+        let isNothingFound = true
+
+        for (const [platformId, animeState] of state) {
+            if (isNothingFound && animeState !== undefined) {
+                isNothingFound = false
+            }
+
+            if (!animeState?.episodes.released) {
                 continue
             }
 
-            await sendNotification(`${platform.title}\n\nВийшла ${platform.episodes.released}-та серія\n\n${platform.url}`)
+
+            const currentReleased = prevMerged?.platforms.get(platformId)?.episodes.released || 0
+            const prevReleased = prevMerged?.platforms.get(platformId)?.episodes.released || 0
+
+            if (currentReleased > prevReleased && currentReleased > listNode.status.episodes.watched) {
+                if (listNode.status.kind === 'planned' && currentReleased < listNode.num_episodes) {
+                    continue
+                }
+
+                await sendNotification(`${animeState.title}\n\nВийшла ${animeState.episodes.released}-та серія\n\n${animeState.url}`)
+            }
+        }
+
+        if (isNothingFound) {
+            notFound.set(listNode.id, listNode)
+        } else {
+            merged.set(listNode.id, {
+                list: listNode,
+                platforms: state
+            })
         }
     }
-
+    catch (e) {
+        await sendNotification(`Невдалось перевірити оновлення для аніме ${listNode.title} (id: ${listNode.id}): ${e}\n\n${e?.stack}`)
+    }
 }
 
+console.log(...notFound.values())
 
-await Deno.writeTextFile('./merged-state.json', JSON.stringify(merged))
+
+await Deno.writeTextFile('./merged-state.json', superjson.stringify(merged))
 

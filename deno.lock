@@ -41,7 +41,8 @@
   },
   "npm": {
     "specifiers": {
-      "node-telegram-bot-api": "node-telegram-bot-api@0.61.0_request@2.88.2"
+      "node-telegram-bot-api": "node-telegram-bot-api@0.61.0_request@2.88.2",
+      "superjson": "superjson@1.12.3"
     },
     "packages": {
       "ajv@6.12.6": {
@@ -127,6 +128,12 @@
         "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
         "dependencies": {
           "delayed-stream": "delayed-stream@1.0.0"
+        }
+      },
+      "copy-anything@3.0.5": {
+        "integrity": "sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==",
+        "dependencies": {
+          "is-what": "is-what@4.1.15"
         }
       },
       "core-util-is@1.0.2": {
@@ -474,6 +481,10 @@
           "call-bind": "call-bind@1.0.2"
         }
       },
+      "is-what@4.1.15": {
+        "integrity": "sha512-uKua1wfy3Yt+YqsD6mTUEa2zSi3G1oPlqTflgaPJ7z63vUGN5pxFpnQfeSLMFnJDEsdvOtkp1rUWkYjB4YfhgA==",
+        "dependencies": {}
+      },
       "isarray@1.0.0": {
         "integrity": "sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==",
         "dependencies": {}
@@ -733,6 +744,12 @@
         "integrity": "sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==",
         "dependencies": {
           "safe-buffer": "safe-buffer@5.1.2"
+        }
+      },
+      "superjson@1.12.3": {
+        "integrity": "sha512-0j+U70KUtP8+roVPbwfqkyQI7lBt7ETnuA7KXbTDX3mCKiD/4fXs2ldKSMdt0MCfpTwiMxo20yFU3vu6ewETpQ==",
+        "dependencies": {
+          "copy-anything": "copy-anything@3.0.5"
         }
       },
       "tough-cookie@2.5.0": {

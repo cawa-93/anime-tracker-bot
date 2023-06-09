@@ -17,7 +17,6 @@ function closest(childEl: Element, selectorString: string): Element | null {
     return null;
 }
 
-
 export class AnitubeInUaStatusTracker implements StatusTracker {
 
     private timeout = 10000
@@ -101,8 +100,8 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
             return undefined
         }
 
-        const episodes = this.parseEpisodesNumbers(targetStory?.querySelector('.story_infa')?.textContent || '')
         const title = targetStory.querySelector('h2').textContent.trim()
+        const episodes = this.parseEpisodesNumbers(targetStory?.querySelector('.story_infa')?.textContent || '')
 
         return {
             episodes,
@@ -119,7 +118,7 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
             const document = new DOMParser().parseFromString(html, "text/html")
 
             if (!document) {
-                throw new Error(`Невдалось розпарсити сторінку ${url}`, originTitle)
+                throw new Error(`Невдалось розпарсити сторінку ${url} (${originTitle})`)
             }
             console.log(url)
             const twitterShareUrl = document.querySelector('a[href^="https://twitter.com/intent/tweet"]').getAttribute('href')!
