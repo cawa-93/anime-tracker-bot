@@ -70,7 +70,8 @@ for (const listNode of results) {
                     continue
                 }
 
-                const episodesText = currentReleased === listNode.num_episodes ? (listNode.num_episodes > 1 ? `🎉 Вийшли всі серії` : '🎉 Реліз') : `Вийшла ${currentReleased}-та серія з ${listNode.num_episodes}`
+                const totalEpisodes = animeState.episodes.total || listNode.num_episodes
+                const episodesText = currentReleased === totalEpisodes ? (totalEpisodes > 1 ? `🎉 Вийшли всі серії` : '🎉 Реліз') : `Вийшла ${currentReleased}-та серія з ${totalEpisodes || '??'}`
 
                 await sendNotification(`${animeState.title}\n\n${episodesText}\n\n${animeState.url}`)
             }
