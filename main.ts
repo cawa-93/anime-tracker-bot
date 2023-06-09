@@ -92,4 +92,5 @@ console.log(...notFound.values())
 
 
 await Deno.writeTextFile('./merged-state.json', superjson.stringify(merged))
+await Deno.writeTextFile('./not-found-state.json', superjson.stringify(notFound))
 

@@ -32,3 +32,12 @@ jobs:
           git push
           )
 
+      - run: |
+          git diff --exit-code not-found-state.json || (
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add not-found-state.json
+          git commit -m 'Update not-found by GitHub Action'
+          git push
+          )
+
