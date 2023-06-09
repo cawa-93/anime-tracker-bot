@@ -28,7 +28,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add merged-state.json
-          git commit -m 'Update state ny GitHub Action'
+          git commit -m 'Update state by GitHub Action'
           git push
           )
 
