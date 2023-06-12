@@ -1,1 +1,221 @@
-{ "json": [], "meta": { "values": ["map"] } }
+{
+  "json": [
+    [
+      48569,
+      {
+        "id": 48569,
+        "title": "86 Part 2",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 11 } }
+      }
+    ],
+    [
+      19429,
+      {
+        "id": 19429,
+        "title": "Akuma no Riddle",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      42238,
+      {
+        "id": 42238,
+        "title": "Ani ni Tsukeru Kusuri wa Nai! 4",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      49599,
+      {
+        "id": 49599,
+        "title": "Ani ni Tsukeru Kusuri wa Nai! 5",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      40964,
+      {
+        "id": 40964,
+        "title": "Back Arrow",
+        "num_episodes": 24,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      10396,
+      {
+        "id": 10396,
+        "title": "Ben-To",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      42310,
+      {
+        "id": 42310,
+        "title": "Cyberpunk: Edgerunners",
+        "num_episodes": 10,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      2025,
+      {
+        "id": 2025,
+        "title": "Darker than Black: Kuro no Keiyakusha",
+        "num_episodes": 25,
+        "status": { "kind": "watching", "episodes": { "watched": 4 } }
+      }
+    ],
+    [
+      38731,
+      {
+        "id": 38731,
+        "title": "Diamond no Ace: Act II",
+        "num_episodes": 52,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      16774,
+      {
+        "id": 16774,
+        "title": "Inferno Cop",
+        "num_episodes": 13,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      51367,
+      {
+        "id": 51367,
+        "title": "JoJo no Kimyou na Bouken Part 6: Stone Ocean Part 2",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      53273,
+      {
+        "id": 53273,
+        "title": "JoJo no Kimyou na Bouken Part 6: Stone Ocean Part 3",
+        "num_episodes": 14,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      18691,
+      {
+        "id": 18691,
+        "title": "Joshikousei no Koshitsuki",
+        "num_episodes": 6,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      50339,
+      {
+        "id": 50339,
+        "title": "Kakegurui Twin",
+        "num_episodes": 6,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      39675,
+      {
+        "id": 39675,
+        "title": "Ling Long: Incarnation",
+        "num_episodes": 6,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      36722,
+      {
+        "id": 36722,
+        "title": "Shen Qi Huan Qi Tan",
+        "num_episodes": 24,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      79,
+      {
+        "id": 79,
+        "title": "Shuffle!",
+        "num_episodes": 24,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      41946,
+      {
+        "id": 41946,
+        "title": "Shuumatsu no Harem",
+        "num_episodes": 11,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      49357,
+      {
+        "id": 49357,
+        "title": "Star Wars: Visions",
+        "num_episodes": 9,
+        "status": { "kind": "watching", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      25,
+      {
+        "id": 25,
+        "title": "Sunabouzu",
+        "num_episodes": 24,
+        "status": { "kind": "watching", "episodes": { "watched": 11 } }
+      }
+    ],
+    [
+      49877,
+      {
+        "id": 49877,
+        "title": "Tensei shitara Slime Datta Ken Movie: Guren no Kizuna-hen",
+        "num_episodes": 1,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      33064,
+      {
+        "id": 33064,
+        "title": "Uchuu Senkan Yamato 2202: Ai no Senshi-tachi",
+        "num_episodes": 26,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      36762,
+      {
+        "id": 36762,
+        "title": "Xue Se Cang Qiong",
+        "num_episodes": 26,
+        "status": { "kind": "watching", "episodes": { "watched": 14 } }
+      }
+    ],
+    [
+      51096,
+      {
+        "id": 51096,
+        "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
+        "num_episodes": 13,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ]
+  ],
+  "meta": { "values": ["map"] }
+}
