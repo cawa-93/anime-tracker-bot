@@ -32,6 +32,7 @@ const prevMergedState: MergedMap = await Deno.readTextFile('./merged-state.json'
 
 
 async function getStates(node: ListNode) {
+    console.log('Пошук:', node.title)
     return new Map(
         await Promise.all(
             stateTrackers.map(async ([platformId, tracker]) => [platformId, await tracker.getStatus(node)] as const)

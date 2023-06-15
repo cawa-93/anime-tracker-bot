@@ -8,11 +8,6 @@ export type ListNodeStatus = {
     }
 }
 
-// Я ПОДИВИВСЯ
-// ВИЙШЛИ
-// ВСЬОГО ВИЙДЕ
-
-
 export type ListNode = {
     /** MAL id */
     id: number

@@ -1,15 +1,9 @@
 import {ListNode} from "../listsTrackers/contracts.ts";
-// import {AnimeStateAnitubeInUA} from "./AnitubeInUa.ts";
-
 
 
 export enum Platforms {
     anitubeinua
 }
-
-// export type PlatformToStateMap = {
-//     [Platforms.anitubeinua]: AnimeStateAnitubeInUA
-// }
 
 export type AnimeState = {
     episodes: {
