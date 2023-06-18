@@ -160,7 +160,7 @@
           [
             0,
             {
-              "episodes": { "released": 10, "total": null },
+              "episodes": { "released": 11, "total": 11 },
               "title": "Доктор Стоун: Новий світ (3 сезон)",
               "url": "https://anitube.in.ua/4280-dr-stone-new-world.html"
             }
@@ -1167,7 +1167,7 @@
         "4.1.platforms": ["map"],
         "5.1.platforms": ["map"],
         "6.1.platforms": ["map"],
-        "7.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "7.1.platforms": ["map"],
         "8.1.platforms": ["map"],
         "9.1.platforms": ["map"],
         "10.1.platforms": ["map"],
