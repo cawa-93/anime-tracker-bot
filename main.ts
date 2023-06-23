@@ -31,16 +31,6 @@ type MergedMap = Map<AnimeStatusMerged['list']['id'], AnimeStatusMerged>
 const prevMergedState: MergedMap = await Deno.readTextFile('./merged-state.json').then(s => s.trim() ? superjson.parse(s) : new Map())
 
 
-async function getStates(node: ListNode) {
-    console.log('Пошук:', node.title)
-    return new Map(
-        await Promise.all(
-            stateTrackers.map(async ([platformId, tracker]) => [platformId, await tracker.getStatus(node)] as const)
-        )
-    )
-
-}
-
 const notFound: Map<ListNode['id'], ListNode> = new Map()
 const merged: MergedMap = new Map()
 
@@ -49,7 +39,48 @@ for (const listNode of results) {
     try {
 
         const prevMerged = prevMergedState.get(listNode.id)
-        const state = await getStates(listNode)
+
+        /**
+         * Масив платформ на яких вже вийшли всі серії.
+         * Перевіряти ці платформи немає сенсу, оскільки вже відомо що всі серії цільового шоу на ній вже вийшли,
+         * Тому ці платформи можна сміливо пропускати.
+         */
+        const alreadyFullAired: Platforms[] = prevMerged
+            ? [...prevMerged.platforms.entries()]
+                .reduce(
+                    (acc, [p, s]) => {
+                        if (s?.episodes.released && s?.episodes.total && s?.episodes.released === s?.episodes.total) {
+                            acc.push(p)
+                        }
+
+                        return acc;
+                    },
+                    [] as Platforms[]
+                )
+            : []
+
+        if (alreadyFullAired.length === (Object.keys(Platforms).length / 2)) {
+            console.log(listNode.id, `"${listNode.title}"`, 'Швидкий пропуск')
+        }
+
+        const state = new Map(
+            await Promise.all(
+                stateTrackers.map(
+                    async ([platformId, tracker]) => [
+                        platformId,
+                        alreadyFullAired.includes(platformId)
+                            /**
+                             * Якщо відомо, що на платформі вийшли всі серії, то замість оновлення стану просто використати попередній
+                             */
+                            ? prevMerged?.platforms.get(platformId)
+                            /**
+                             * Якщо раніше платформа не була оброблена, або на момент останнього сканування на ній не вийшли всі серії запустити нове сканування.
+                             */
+                            : await tracker.getStatus(listNode)
+                    ] as const
+                )
+            )
+        )
 
         let isNothingFound = true
 
