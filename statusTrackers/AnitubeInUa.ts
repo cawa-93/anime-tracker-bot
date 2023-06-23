@@ -1,6 +1,6 @@
 import {AnimeState, StatusTracker} from "./contracts.ts";
 import {ListNode} from "../listsTrackers/contracts.ts";
-import {DOMParser, type Element, type HTMLDocument} from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
+import {DOMParser, type Element, type HTMLDocument} from "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts";
 import {isTitleEqual} from "../utils/isTitleEqual.ts";
 
 
@@ -25,11 +25,9 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
 
 
     private fetchWithTimeout(input: RequestInfo | URL, init?: RequestInit) {
-        return this.timeOutPromise.then(() => {
-            return fetch(input, init)
-        }).finally(() => {
-            this.timeOutPromise = new Promise(r => setTimeout(r, this.timeout))
-        })
+        return this.timeOutPromise
+            .then(() => fetch(input, init))
+            .finally(() => this.timeOutPromise = new Promise(r => setTimeout(r, this.timeout)))
 
     }
 
@@ -130,7 +128,16 @@ export class AnitubeInUaStatusTracker implements StatusTracker {
                 throw new Error(`Невдалось розпарсити сторінку ${url} (${[...originTitles]})`)
             }
             console.log(url)
-            const twitterShareUrl = document.querySelector('a[href^="https://twitter.com/intent/tweet"]').getAttribute('href')!
+            const twitterShareUrl = document.querySelector('a[href^="https://twitter.com/intent/tweet"]')?.getAttribute('href')
+            if (!twitterShareUrl) {
+                throw new Error('Невдалось знайти twitterShareUrl на сторінці', {
+                    cause: {
+                        twitterShareUrl,
+                        documentTitle: document.querySelector('title').textContent,
+                        documentUrl: url
+                    }
+                })
+            }
             const originalTitleOnPage = new URL(twitterShareUrl).searchParams.get('text').split(url)[0].trim()
 
             if (![...originTitles].some(t => isTitleEqual(t, originalTitleOnPage))) {
