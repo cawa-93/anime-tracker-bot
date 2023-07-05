@@ -400,6 +400,27 @@
       }
     ],
     [
+      46569,
+      {
+        "list": {
+          "id": 46569,
+          "title": "Jigokuraku",
+          "num_episodes": 13,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 13, "total": 13 },
+              "url": "https://anitube.in.ua/4259-pekloray.html",
+              "title": "Пеклорай / Пекельний рай"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40716,
       {
         "list": {
@@ -1193,8 +1214,8 @@
         "30.1.platforms": ["map"],
         "31.1.platforms": ["map"],
         "32.1.platforms": ["map"],
-        "33.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "34.1.platforms": ["map"],
+        "33.1.platforms": ["map"],
+        "34.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "35.1.platforms": ["map"],
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
@@ -1214,7 +1235,8 @@
         "51.1.platforms": ["map"],
         "52.1.platforms": ["map"],
         "53.1.platforms": ["map"],
-        "54.1.platforms": ["map"]
+        "54.1.platforms": ["map"],
+        "55.1.platforms": ["map"]
       }
     ]
   }
