@@ -421,6 +421,27 @@
       }
     ],
     [
+      48316,
+      {
+        "list": {
+          "id": 48316,
+          "title": "Kage no Jitsuryokusha ni Naritakute!",
+          "num_episodes": 20,
+          "status": { "kind": "watching", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 20, "total": 20 },
+              "url": "https://anitube.in.ua/4095-shodzhennya-v-tn.html",
+              "title": "Сходження в тіні"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40716,
       {
         "list": {
@@ -1215,8 +1236,8 @@
         "31.1.platforms": ["map"],
         "32.1.platforms": ["map"],
         "33.1.platforms": ["map"],
-        "34.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "35.1.platforms": ["map"],
+        "34.1.platforms": ["map"],
+        "35.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
         "38.1.platforms": ["map"],
@@ -1236,7 +1257,8 @@
         "52.1.platforms": ["map"],
         "53.1.platforms": ["map"],
         "54.1.platforms": ["map"],
-        "55.1.platforms": ["map"]
+        "55.1.platforms": ["map"],
+        "56.1.platforms": ["map"]
       }
     ]
   }
