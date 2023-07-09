@@ -631,6 +631,27 @@
       }
     ],
     [
+      51179,
+      {
+        "list": {
+          "id": 51179,
+          "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 0, "total": 12 },
+              "url": "https://anitube.in.ua/4371-mushoku-tensei-ii-isekai-ittara-honki-dasu.html",
+              "title": "Реінкарнація безробітного 2: В інший світ на повному серйозі (2 сезон)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       36517,
       {
         "list": {
@@ -1215,8 +1236,8 @@
         "31.1.platforms": ["map"],
         "32.1.platforms": ["map"],
         "33.1.platforms": ["map"],
-        "34.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "35.1.platforms": ["map"],
+        "34.1.platforms": ["map"],
+        "35.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
         "38.1.platforms": ["map"],
@@ -1236,7 +1257,8 @@
         "52.1.platforms": ["map"],
         "53.1.platforms": ["map"],
         "54.1.platforms": ["map"],
-        "55.1.platforms": ["map"]
+        "55.1.platforms": ["map"],
+        "56.1.platforms": ["map"]
       }
     ]
   }
