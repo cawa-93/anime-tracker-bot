@@ -748,7 +748,7 @@
           [
             0,
             {
-              "episodes": { "released": 280, "total": null },
+              "episodes": { "released": 282, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -898,6 +898,27 @@
               "episodes": { "released": 12, "total": 12 },
               "title": "Найкращий у світі вбивця перероджується в іншому світі як аристократ",
               "url": "https://anitube.in.ua/3865-sekai-saikou-no-ansatsusha-isekai-kizoku-ni-tensei-suru.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      49413,
+      {
+        "list": {
+          "id": 49413,
+          "title": "Shiguang Dailiren II",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 2, "total": 12 },
+              "url": "https://anitube.in.ua/4416-shiguang-dailiren-ii.html",
+              "title": "Агенти часу 2"
             }
           ]
         ]
@@ -1258,7 +1279,8 @@
         "53.1.platforms": ["map"],
         "54.1.platforms": ["map"],
         "55.1.platforms": ["map"],
-        "56.1.platforms": ["map"]
+        "56.1.platforms": ["map"],
+        "57.1.platforms": ["map"]
       }
     ]
   }
