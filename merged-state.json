@@ -316,6 +316,27 @@
       }
     ],
     [
+      54856,
+      {
+        "list": {
+          "id": 54856,
+          "title": "Horimiya: Piece",
+          "num_episodes": 13,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 3, "total": 13 },
+              "title": "Хорімія. Фрагменти",
+              "url": "https://anitube.in.ua/4365-horimiya-piece.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40046,
       {
         "list": {
@@ -421,6 +442,27 @@
       }
     ],
     [
+      51009,
+      {
+        "list": {
+          "id": 51009,
+          "title": "Jujutsu Kaisen 2nd Season",
+          "num_episodes": 23,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 3, "total": 23 },
+              "url": "https://anitube.in.ua/4384-magchna-bitva-2-sezon.html",
+              "title": "Магічна Битва (2 сезон)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40716,
       {
         "list": {
@@ -478,6 +520,27 @@
               "episodes": { "released": 12, "total": 12 },
               "title": "Дівчина напрокат (Сезон 2)",
               "url": "https://anitube.in.ua/4003-kanojo-okarishimasu-2nd-season.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      53050,
+      {
+        "list": {
+          "id": 53050,
+          "title": "Kanojo, Okarishimasu 3rd Season",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 2, "total": 12 },
+              "url": "https://anitube.in.ua/4395-dvchina-naprokat-3-sezon.html",
+              "title": "Дівчина напрокат (3 сезон)"
             }
           ]
         ]
@@ -1135,6 +1198,27 @@
       }
     ],
     [
+      54790,
+      {
+        "list": {
+          "id": 54790,
+          "title": "Undead Girl Murder Farce",
+          "num_episodes": 13,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 3, "total": 13 },
+              "title": "Фарс з убивством упириці",
+              "url": "https://anitube.in.ua/4382-undead-girl-murder-farce.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       37393,
       {
         "list": {
@@ -1217,6 +1301,27 @@
           ]
         ]
       }
+    ],
+    [
+      54112,
+      {
+        "list": {
+          "id": 54112,
+          "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 2, "total": 12 },
+              "title": "Зом 100: Сотня справ, які треба зробити перш ніж стати зомбаком",
+              "url": "https://anitube.in.ua/4399-zom-100-zombie-ni-naru-made-ni-shitai-100-no-koto.html"
+            }
+          ]
+        ]
+      }
     ]
   ],
   "meta": {
@@ -1258,10 +1363,10 @@
         "32.1.platforms": ["map"],
         "33.1.platforms": ["map"],
         "34.1.platforms": ["map"],
-        "35.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "35.1.platforms": ["map"],
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
-        "38.1.platforms": ["map"],
+        "38.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "39.1.platforms": ["map"],
         "40.1.platforms": ["map"],
         "41.1.platforms": ["map"],
@@ -1280,7 +1385,12 @@
         "54.1.platforms": ["map"],
         "55.1.platforms": ["map"],
         "56.1.platforms": ["map"],
-        "57.1.platforms": ["map"]
+        "57.1.platforms": ["map"],
+        "58.1.platforms": ["map"],
+        "59.1.platforms": ["map"],
+        "60.1.platforms": ["map"],
+        "61.1.platforms": ["map"],
+        "62.1.platforms": ["map"]
       }
     ]
   }
