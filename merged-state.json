@@ -169,27 +169,6 @@
       }
     ],
     [
-      50612,
-      {
-        "list": {
-          "id": 50612,
-          "title": "Dr. Stone: Ryuusui",
-          "num_episodes": 1,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 1, "total": 1 },
-              "url": "https://anitube.in.ua/4234-doktor-stoun-ryusuy.html",
-              "title": "Доктор Стоун: Рюсуй"
-            }
-          ]
-        ]
-      }
-    ],
-    [
       49605,
       {
         "list": {
@@ -295,6 +274,27 @@
       }
     ],
     [
+      53438,
+      {
+        "list": {
+          "id": 53438,
+          "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 3, "total": 12 },
+              "url": "https://anitube.in.ua/4391-bezzhalna-koroleva-na-shlyahu-do-vipravlennya.html",
+              "title": "Безжальна королева на шляху до виправлення"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       42429,
       {
         "list": {
@@ -328,7 +328,7 @@
           [
             0,
             {
-              "episodes": { "released": 4, "total": 13 },
+              "episodes": { "released": 5, "total": 13 },
               "title": "Хорімія. Фрагменти",
               "url": "https://anitube.in.ua/4365-horimiya-piece.html"
             }
@@ -538,7 +538,7 @@
           [
             0,
             {
-              "episodes": { "released": 3, "total": 12 },
+              "episodes": { "released": 4, "total": 12 },
               "url": "https://anitube.in.ua/4395-dvchina-naprokat-3-sezon.html",
               "title": "Дівчина напрокат (3 сезон)"
             }
@@ -1210,7 +1210,7 @@
           [
             0,
             {
-              "episodes": { "released": 3, "total": 13 },
+              "episodes": { "released": 4, "total": 13 },
               "title": "Фарс з убивством упириці",
               "url": "https://anitube.in.ua/4382-undead-girl-murder-farce.html"
             }
