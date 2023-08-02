@@ -73,24 +73,6 @@
       }
     ],
     [
-      53438,
-      {
-        "id": 53438,
-        "title": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
-        "num_episodes": 12,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      54856,
-      {
-        "id": 54856,
-        "title": "Horimiya: Piece",
-        "num_episodes": 13,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       16774,
       {
         "id": 16774,
@@ -127,15 +109,6 @@
       }
     ],
     [
-      51009,
-      {
-        "id": 51009,
-        "title": "Jujutsu Kaisen 2nd Season",
-        "num_episodes": 23,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       54595,
       {
         "id": 54595,
@@ -150,24 +123,6 @@
         "id": 50339,
         "title": "Kakegurui Twin",
         "num_episodes": 6,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      53050,
-      {
-        "id": 53050,
-        "title": "Kanojo, Okarishimasu 3rd Season",
-        "num_episodes": 12,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      1606,
-      {
-        "id": 1606,
-        "title": "Kekkaishi",
-        "num_episodes": 52,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
@@ -190,39 +145,12 @@
       }
     ],
     [
-      48417,
-      {
-        "id": 48417,
-        "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
-        "num_episodes": 12,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      51179,
-      {
-        "id": 51179,
-        "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-        "num_episodes": 12,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       55818,
       {
         "id": 55818,
         "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
         "num_episodes": 1,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      21,
-      {
-        "id": 21,
-        "title": "One Piece",
-        "num_episodes": 0,
-        "status": { "kind": "watching", "episodes": { "watched": 1013 } }
       }
     ],
     [
@@ -240,15 +168,6 @@
         "id": 36722,
         "title": "Shen Qi Huan Qi Tan",
         "num_episodes": 24,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      49413,
-      {
-        "id": 49413,
-        "title": "Shiguang Dailiren II",
-        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
@@ -307,15 +226,6 @@
       }
     ],
     [
-      54790,
-      {
-        "id": 54790,
-        "title": "Undead Girl Murder Farce",
-        "num_episodes": 13,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       36762,
       {
         "id": 36762,
@@ -330,15 +240,6 @@
         "id": 51096,
         "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
         "num_episodes": 13,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      54112,
-      {
-        "id": 54112,
-        "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
-        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ]
