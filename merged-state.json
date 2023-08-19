@@ -43,6 +43,27 @@
       }
     ],
     [
+      54846,
+      {
+        "list": {
+          "id": 54846,
+          "title": "Aishang Ta de Liyou",
+          "num_episodes": 22,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 7, "total": 22 },
+              "url": "https://anitube.in.ua/4338-dvchina-znizu.html",
+              "title": "Дівчина знизу"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40128,
       {
         "list": {
@@ -811,7 +832,7 @@
           [
             0,
             {
-              "episodes": { "released": 305, "total": null },
+              "episodes": { "released": 306, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -979,7 +1000,7 @@
           [
             0,
             {
-              "episodes": { "released": 6, "total": 12 },
+              "episodes": { "released": 7, "total": 12 },
               "url": "https://anitube.in.ua/4416-shiguang-dailiren-ii.html",
               "title": "Ательє часу 2 / Агенти часу 2"
             }
@@ -1210,7 +1231,7 @@
           [
             0,
             {
-              "episodes": { "released": 6, "total": 13 },
+              "episodes": { "released": 7, "total": 13 },
               "title": "Фарс з убивством упириці",
               "url": "https://anitube.in.ua/4382-undead-girl-murder-farce.html"
             }
@@ -1366,8 +1387,8 @@
         "35.1.platforms": ["map"],
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
-        "38.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "39.1.platforms": ["map"],
+        "38.1.platforms": ["map"],
+        "39.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "40.1.platforms": ["map"],
         "41.1.platforms": ["map"],
         "42.1.platforms": ["map"],
@@ -1390,7 +1411,8 @@
         "59.1.platforms": ["map"],
         "60.1.platforms": ["map"],
         "61.1.platforms": ["map"],
-        "62.1.platforms": ["map"]
+        "62.1.platforms": ["map"],
+        "63.1.platforms": ["map"]
       }
     ]
   }
