@@ -1198,6 +1198,27 @@
       }
     ],
     [
+      49877,
+      {
+        "list": {
+          "id": 49877,
+          "title": "Tensei shitara Slime Datta Ken Movie: Guren no Kizuna-hen",
+          "num_episodes": 1,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 1, "total": 1 },
+              "url": "https://anitube.in.ua/4463-pro-moye-pererodzhennya-v-sliz-zvyazok-chervonogo-lotosa.html",
+              "title": "Про моє переродження в слиз: Зв'язок Червоного Лотоса"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       52093,
       {
         "list": {
@@ -1412,7 +1433,8 @@
         "60.1.platforms": ["map"],
         "61.1.platforms": ["map"],
         "62.1.platforms": ["map"],
-        "63.1.platforms": ["map"]
+        "63.1.platforms": ["map"],
+        "64.1.platforms": ["map"]
       }
     ]
   }
