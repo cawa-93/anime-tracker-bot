@@ -224,6 +224,15 @@
         "num_episodes": 26,
         "status": { "kind": "watching", "episodes": { "watched": 14 } }
       }
+    ],
+    [
+      51096,
+      {
+        "id": 51096,
+        "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
+        "num_episodes": 13,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
     ]
   ],
   "meta": { "values": ["map"] }
