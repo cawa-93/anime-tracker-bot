@@ -484,6 +484,27 @@
       }
     ],
     [
+      54595,
+      {
+        "list": {
+          "id": 54595,
+          "title": "Kage no Jitsuryokusha ni Naritakute! 2nd Season",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 1, "total": 12 },
+              "url": "https://anitube.in.ua/4476-shodzhennya-v-tn-2-sezon.html",
+              "title": "Сходження в тіні (2 сезон)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40716,
       {
         "list": {
@@ -832,7 +853,7 @@
           [
             0,
             {
-              "episodes": { "released": 354, "total": null },
+              "episodes": { "released": 355, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -1409,8 +1430,8 @@
         "36.1.platforms": ["map"],
         "37.1.platforms": ["map"],
         "38.1.platforms": ["map"],
-        "39.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "40.1.platforms": ["map"],
+        "39.1.platforms": ["map"],
+        "40.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "41.1.platforms": ["map"],
         "42.1.platforms": ["map"],
         "43.1.platforms": ["map"],
@@ -1434,7 +1455,8 @@
         "61.1.platforms": ["map"],
         "62.1.platforms": ["map"],
         "63.1.platforms": ["map"],
-        "64.1.platforms": ["map"]
+        "64.1.platforms": ["map"],
+        "65.1.platforms": ["map"]
       }
     ]
   }
