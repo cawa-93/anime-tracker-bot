@@ -853,7 +853,7 @@
           [
             0,
             {
-              "episodes": { "released": 355, "total": null },
+              "episodes": { "released": 356, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -1219,6 +1219,27 @@
       }
     ],
     [
+      40357,
+      {
+        "list": {
+          "id": 40357,
+          "title": "Tate no Yuusha no Nariagari Season 3",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 1, "total": 12 },
+              "title": "Сходження героя щита 3",
+              "url": "https://anitube.in.ua/4483-tate-no-yuusha-no-nariagari-season-3.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       49877,
       {
         "list": {
@@ -1456,7 +1477,8 @@
         "62.1.platforms": ["map"],
         "63.1.platforms": ["map"],
         "64.1.platforms": ["map"],
-        "65.1.platforms": ["map"]
+        "65.1.platforms": ["map"],
+        "66.1.platforms": ["map"]
       }
     ]
   }
