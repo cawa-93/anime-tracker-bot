@@ -77,7 +77,7 @@
       {
         "id": 47160,
         "title": "Goblin Slayer II",
-        "num_episodes": 0,
+        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
@@ -205,15 +205,6 @@
         "title": "Sunabouzu",
         "num_episodes": 24,
         "status": { "kind": "watching", "episodes": { "watched": 11 } }
-      }
-    ],
-    [
-      40357,
-      {
-        "id": 40357,
-        "title": "Tate no Yuusha no Nariagari Season 3",
-        "num_episodes": 12,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
     [
