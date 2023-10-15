@@ -631,6 +631,27 @@
       }
     ],
     [
+      52990,
+      {
+        "list": {
+          "id": 52990,
+          "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 2, "total": 12 },
+              "title": "Історія наших побачень: досвідчена ти і недосвідчений я",
+              "url": "https://anitube.in.ua/4486-keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       1606,
       {
         "list": {
@@ -874,7 +895,7 @@
           [
             0,
             {
-              "episodes": { "released": 363, "total": null },
+              "episodes": { "released": 364, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -1474,8 +1495,8 @@
         "38.1.platforms": ["map"],
         "39.1.platforms": ["map"],
         "40.1.platforms": ["map"],
-        "41.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "42.1.platforms": ["map"],
+        "41.1.platforms": ["map"],
+        "42.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "43.1.platforms": ["map"],
         "44.1.platforms": ["map"],
         "45.1.platforms": ["map"],
@@ -1500,7 +1521,8 @@
         "64.1.platforms": ["map"],
         "65.1.platforms": ["map"],
         "66.1.platforms": ["map"],
-        "67.1.platforms": ["map"]
+        "67.1.platforms": ["map"],
+        "68.1.platforms": ["map"]
       }
     ]
   }
