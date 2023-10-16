@@ -190,6 +190,27 @@
       }
     ],
     [
+      55644,
+      {
+        "list": {
+          "id": 55644,
+          "title": "Dr. Stone: New World Part 2",
+          "num_episodes": 0,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 1, "total": null },
+              "title": "Доктор Стоун: Новий світ (3 сезон 2 частина)",
+              "url": "https://anitube.in.ua/4516-dr-stone-new-world-part-2.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       49605,
       {
         "list": {
@@ -601,7 +622,7 @@
           [
             0,
             {
-              "episodes": { "released": 11, "total": 12 },
+              "episodes": { "released": 12, "total": 12 },
               "url": "https://anitube.in.ua/4395-dvchina-naprokat-3-sezon.html",
               "title": "Дівчина напрокат (3 сезон)"
             }
@@ -1463,7 +1484,7 @@
         "6.1.platforms": ["map"],
         "7.1.platforms": ["map"],
         "8.1.platforms": ["map"],
-        "9.1.platforms": ["map"],
+        "9.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "10.1.platforms": ["map"],
         "11.1.platforms": ["map"],
         "12.1.platforms": ["map"],
@@ -1496,8 +1517,8 @@
         "39.1.platforms": ["map"],
         "40.1.platforms": ["map"],
         "41.1.platforms": ["map"],
-        "42.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "43.1.platforms": ["map"],
+        "42.1.platforms": ["map"],
+        "43.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "44.1.platforms": ["map"],
         "45.1.platforms": ["map"],
         "46.1.platforms": ["map"],
@@ -1522,7 +1543,8 @@
         "65.1.platforms": ["map"],
         "66.1.platforms": ["map"],
         "67.1.platforms": ["map"],
-        "68.1.platforms": ["map"]
+        "68.1.platforms": ["map"],
+        "69.1.platforms": ["map"]
       }
     ]
   }
