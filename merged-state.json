@@ -589,6 +589,27 @@
       }
     ],
     [
+      43969,
+      {
+        "list": {
+          "id": 43969,
+          "title": "Kanojo mo Kanojo",
+          "num_episodes": 12,
+          "status": { "kind": "watching", "episodes": { "watched": 3 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 12, "total": 12 },
+              "title": "Дівчина і ще дівчина",
+              "url": "https://anitube.in.ua/3834-kanojo-mo-kanojo.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       42963,
       {
         "list": {
@@ -1518,8 +1539,8 @@
         "40.1.platforms": ["map"],
         "41.1.platforms": ["map"],
         "42.1.platforms": ["map"],
-        "43.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "44.1.platforms": ["map"],
+        "43.1.platforms": ["map"],
+        "44.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "45.1.platforms": ["map"],
         "46.1.platforms": ["map"],
         "47.1.platforms": ["map"],
@@ -1544,7 +1565,8 @@
         "66.1.platforms": ["map"],
         "67.1.platforms": ["map"],
         "68.1.platforms": ["map"],
-        "69.1.platforms": ["map"]
+        "69.1.platforms": ["map"],
+        "70.1.platforms": ["map"]
       }
     ]
   }
