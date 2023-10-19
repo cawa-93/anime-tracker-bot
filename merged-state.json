@@ -595,7 +595,7 @@
           "id": 43969,
           "title": "Kanojo mo Kanojo",
           "num_episodes": 12,
-          "status": { "kind": "watching", "episodes": { "watched": 3 } }
+          "status": { "kind": "watching", "episodes": { "watched": 7 } }
         },
         "platforms": [
           [
@@ -937,7 +937,7 @@
           [
             0,
             {
-              "episodes": { "released": 367, "total": null },
+              "episodes": { "released": 368, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
