@@ -195,7 +195,7 @@
         "list": {
           "id": 55644,
           "title": "Dr. Stone: New World Part 2",
-          "num_episodes": 0,
+          "num_episodes": 11,
           "status": { "kind": "planned", "episodes": { "watched": 0 } }
         },
         "platforms": [
@@ -685,7 +685,7 @@
           [
             0,
             {
-              "episodes": { "released": 2, "total": 12 },
+              "episodes": { "released": 3, "total": 12 },
               "title": "Історія наших побачень: досвідчена ти і недосвідчений я",
               "url": "https://anitube.in.ua/4486-keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.html"
             }
