@@ -517,7 +517,7 @@
           [
             0,
             {
-              "episodes": { "released": 17, "total": 23 },
+              "episodes": { "released": 18, "total": 23 },
               "url": "https://anitube.in.ua/4384-magchna-bitva-2-sezon.html",
               "title": "Магічна Битва (2 сезон)"
             }
@@ -709,6 +709,27 @@
               "episodes": { "released": 34, "total": 52 },
               "title": "Майстри бар'єрів",
               "url": "https://anitube.in.ua/3309-kekkaishi.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      36699,
+      {
+        "list": {
+          "id": 36699,
+          "title": "Kimitachi wa Dou Ikiru ka",
+          "num_episodes": 1,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 1, "total": 1 },
+              "title": "Як ти поживаєш?",
+              "url": "https://anitube.in.ua/4548-kimitachi-wa-dou-ikiru-ka.html"
             }
           ]
         ]
@@ -937,7 +958,7 @@
           [
             0,
             {
-              "episodes": { "released": 404, "total": null },
+              "episodes": { "released": 405, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -1540,8 +1561,8 @@
         "41.1.platforms": ["map"],
         "42.1.platforms": ["map"],
         "43.1.platforms": ["map"],
-        "44.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
-        "45.1.platforms": ["map"],
+        "44.1.platforms": ["map"],
+        "45.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "46.1.platforms": ["map"],
         "47.1.platforms": ["map"],
         "48.1.platforms": ["map"],
@@ -1566,7 +1587,8 @@
         "67.1.platforms": ["map"],
         "68.1.platforms": ["map"],
         "69.1.platforms": ["map"],
-        "70.1.platforms": ["map"]
+        "70.1.platforms": ["map"],
+        "71.1.platforms": ["map"]
       }
     ]
   }
