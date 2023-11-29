@@ -1,6 +1,15 @@
 {
   "json": [
     [
+      54846,
+      {
+        "id": 54846,
+        "title": "Aishang Ta de Liyou",
+        "num_episodes": 22,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       19429,
       {
         "id": 19429,
@@ -73,6 +82,24 @@
       }
     ],
     [
+      55644,
+      {
+        "id": 55644,
+        "title": "Dr. Stone: New World Part 2",
+        "num_episodes": 11,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      47160,
+      {
+        "id": 47160,
+        "title": "Goblin Slayer II",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       16774,
       {
         "id": 16774,
@@ -109,11 +136,47 @@
       }
     ],
     [
+      51009,
+      {
+        "id": 51009,
+        "title": "Jujutsu Kaisen 2nd Season",
+        "num_episodes": 23,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      54595,
+      {
+        "id": 54595,
+        "title": "Kage no Jitsuryokusha ni Naritakute! 2nd Season",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       50339,
       {
         "id": 50339,
         "title": "Kakegurui Twin",
         "num_episodes": 6,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      52990,
+      {
+        "id": 52990,
+        "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      1606,
+      {
+        "id": 1606,
+        "title": "Kekkaishi",
+        "num_episodes": 52,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
@@ -127,12 +190,30 @@
       }
     ],
     [
+      48417,
+      {
+        "id": 48417,
+        "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       55818,
       {
         "id": 55818,
         "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
         "num_episodes": 1,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      21,
+      {
+        "id": 21,
+        "title": "One Piece",
+        "num_episodes": 0,
+        "status": { "kind": "watching", "episodes": { "watched": 1013 } }
       }
     ],
     [
@@ -190,6 +271,15 @@
       }
     ],
     [
+      40357,
+      {
+        "id": 40357,
+        "title": "Tate no Yuusha no Nariagari Season 3",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       33064,
       {
         "id": 33064,
@@ -213,6 +303,15 @@
         "id": 51096,
         "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
         "num_episodes": 13,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      54112,
+      {
+        "id": 54112,
+        "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ]
