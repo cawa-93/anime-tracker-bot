@@ -43,6 +43,27 @@
       }
     ],
     [
+      54846,
+      {
+        "list": {
+          "id": 54846,
+          "title": "Aishang Ta de Liyou",
+          "num_episodes": 22,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 17, "total": 22 },
+              "url": "https://anitube.in.ua/4338-dvchina-znizu.html",
+              "title": "Дівчина знизу"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40128,
       {
         "list": {
@@ -169,6 +190,27 @@
       }
     ],
     [
+      55644,
+      {
+        "list": {
+          "id": 55644,
+          "title": "Dr. Stone: New World Part 2",
+          "num_episodes": 11,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 7, "total": null },
+              "title": "Доктор Стоун: Новий світ (3 сезон 2 частина)",
+              "url": "https://anitube.in.ua/4516-dr-stone-new-world-part-2.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       49605,
       {
         "list": {
@@ -205,6 +247,27 @@
               "episodes": { "released": 13, "total": 13 },
               "title": "Як герой-реаліст перебудовує королівство 2",
               "url": "https://anitube.in.ua/3922-genjitsu-shugi-yuusha-no-oukoku-saikenki-part-2.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      47160,
+      {
+        "list": {
+          "id": 47160,
+          "title": "Goblin Slayer II",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 8, "total": 12 },
+              "url": "https://anitube.in.ua/4490-ubivcya-goblnv-2-sezon.html",
+              "title": "Винищувач гоблінів (2 сезон) / Убивця Гоблінів (2 сезон)"
             }
           ]
         ]
@@ -442,6 +505,48 @@
       }
     ],
     [
+      51009,
+      {
+        "list": {
+          "id": 51009,
+          "title": "Jujutsu Kaisen 2nd Season",
+          "num_episodes": 23,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 18, "total": 23 },
+              "url": "https://anitube.in.ua/4384-magchna-bitva-2-sezon.html",
+              "title": "Магічна Битва (2 сезон)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      54595,
+      {
+        "list": {
+          "id": 54595,
+          "title": "Kage no Jitsuryokusha ni Naritakute! 2nd Season",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 8, "total": 12 },
+              "url": "https://anitube.in.ua/4476-shodzhennya-v-tn-2-sezon.html",
+              "title": "Сходження в тіні (2 сезон)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       40716,
       {
         "list": {
@@ -568,6 +673,48 @@
       }
     ],
     [
+      52990,
+      {
+        "list": {
+          "id": 52990,
+          "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 8, "total": 12 },
+              "title": "Історія наших побачень: досвідчена ти і недосвідчений я",
+              "url": "https://anitube.in.ua/4486-keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      1606,
+      {
+        "list": {
+          "id": 1606,
+          "title": "Kekkaishi",
+          "num_episodes": 52,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 34, "total": 52 },
+              "title": "Майстри бар'єрів",
+              "url": "https://anitube.in.ua/3309-kekkaishi.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       36699,
       {
         "list": {
@@ -625,6 +772,27 @@
               "episodes": { "released": 12, "total": 12 },
               "title": "Родом з Абіса. Золоте місто палаючого сонця",
               "url": "https://anitube.in.ua/4016-made-in-abyss-retsujitsu-no-ougonkyou.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      48417,
+      {
+        "list": {
+          "id": 48417,
+          "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 6, "total": 12 },
+              "url": "https://anitube.in.ua/4180-neviznaniy-v-akademyi-korolya-demonv-2-sezon.html",
+              "title": "Невизнаний в академії Короля Демонів (2 сезон)"
             }
           ]
         ]
@@ -772,6 +940,27 @@
               "episodes": { "released": 12, "total": 12 },
               "url": "https://anitube.in.ua/2610-okultna-devyatka-occulticnine.html",
               "title": "Окультна дев'ятка"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      21,
+      {
+        "list": {
+          "id": 21,
+          "title": "One Piece",
+          "num_episodes": 0,
+          "status": { "kind": "watching", "episodes": { "watched": 1013 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 412, "total": null },
+              "url": "https://anitube.in.ua/94-van-pis.html",
+              "title": "Ван Піс / Великий куш"
             }
           ]
         ]
@@ -1135,6 +1324,27 @@
       }
     ],
     [
+      40357,
+      {
+        "list": {
+          "id": 40357,
+          "title": "Tate no Yuusha no Nariagari Season 3",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 8, "total": 12 },
+              "title": "Сходження героя щита 3",
+              "url": "https://anitube.in.ua/4483-tate-no-yuusha-no-nariagari-season-3.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       49877,
       {
         "list": {
@@ -1280,6 +1490,27 @@
           ]
         ]
       }
+    ],
+    [
+      54112,
+      {
+        "list": {
+          "id": 54112,
+          "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 9, "total": 12 },
+              "title": "Зом 100: Сотня справ, які треба зробити перш ніж стати зомбаком",
+              "url": "https://anitube.in.ua/4399-zom-100-zombie-ni-naru-made-ni-shitai-100-no-koto.html"
+            }
+          ]
+        ]
+      }
     ]
   ],
   "meta": {
@@ -1295,7 +1526,7 @@
         "6.1.platforms": ["map"],
         "7.1.platforms": ["map"],
         "8.1.platforms": ["map"],
-        "9.1.platforms": ["map"],
+        "9.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "10.1.platforms": ["map"],
         "11.1.platforms": ["map"],
         "12.1.platforms": ["map"],
@@ -1331,7 +1562,7 @@
         "42.1.platforms": ["map"],
         "43.1.platforms": ["map"],
         "44.1.platforms": ["map"],
-        "45.1.platforms": ["map"],
+        "45.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "46.1.platforms": ["map"],
         "47.1.platforms": ["map"],
         "48.1.platforms": ["map"],
@@ -1346,7 +1577,18 @@
         "57.1.platforms": ["map"],
         "58.1.platforms": ["map"],
         "59.1.platforms": ["map"],
-        "60.1.platforms": ["map"]
+        "60.1.platforms": ["map"],
+        "61.1.platforms": ["map"],
+        "62.1.platforms": ["map"],
+        "63.1.platforms": ["map"],
+        "64.1.platforms": ["map"],
+        "65.1.platforms": ["map"],
+        "66.1.platforms": ["map"],
+        "67.1.platforms": ["map"],
+        "68.1.platforms": ["map"],
+        "69.1.platforms": ["map"],
+        "70.1.platforms": ["map"],
+        "71.1.platforms": ["map"]
       }
     ]
   }
