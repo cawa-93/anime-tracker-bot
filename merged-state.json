@@ -1072,6 +1072,27 @@
       }
     ],
     [
+      50664,
+      {
+        "list": {
+          "id": 50664,
+          "title": "Saihate no Paladin: Tetsusabi no Yama no Ou",
+          "num_episodes": 12,
+          "status": { "kind": "watching", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 9, "total": 12 },
+              "title": "Паладин з далекого краю: Король іржавих гір",
+              "url": "https://anitube.in.ua/4495-saihate-no-paladin-tetsusabi-no-yama-no-ou.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       35994,
       {
         "list": {
@@ -1588,7 +1609,8 @@
         "68.1.platforms": ["map"],
         "69.1.platforms": ["map"],
         "70.1.platforms": ["map"],
-        "71.1.platforms": ["map"]
+        "71.1.platforms": ["map"],
+        "72.1.platforms": ["map"]
       }
     ]
   }
