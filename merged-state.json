@@ -169,6 +169,48 @@
       }
     ],
     [
+      53613,
+      {
+        "list": {
+          "id": 53613,
+          "title": "Dead Mount Death Play",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 12, "total": 12 },
+              "title": "Сходження мерця Смертельна гра",
+              "url": "https://anitube.in.ua/4300-dead-mount-death-play.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      54743,
+      {
+        "list": {
+          "id": 54743,
+          "title": "Dead Mount Death Play Part 2",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 9, "total": 12 },
+              "url": "https://anitube.in.ua/4504-shodzhennya-mercya-smertelna-gra-chastina-2.html",
+              "title": "Сходження мерця Смертельна гра (сезон 1, частина 2)"
+            }
+          ]
+        ]
+      }
+    ],
+    [
       48549,
       {
         "list": {
@@ -562,6 +604,27 @@
               "episodes": { "released": 12, "total": 12 },
               "title": "Приховані речі",
               "url": "https://anitube.in.ua/3568-kakushigoto.html"
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      51693,
+      {
+        "list": {
+          "id": 51693,
+          "title": "Kaminaki Sekai no Kamisama Katsudou",
+          "num_episodes": 12,
+          "status": { "kind": "planned", "episodes": { "watched": 0 } }
+        },
+        "platforms": [
+          [
+            0,
+            {
+              "episodes": { "released": 12, "total": 12 },
+              "url": "https://anitube.in.ua/4281-bozhestvenn-dyannya-u-svt-bez-bogv.html",
+              "title": "Божественні діяння у світі без богів"
             }
           ]
         ]
@@ -1084,7 +1147,7 @@
           [
             0,
             {
-              "episodes": { "released": 9, "total": 12 },
+              "episodes": { "released": 10, "total": 12 },
               "title": "Паладин з далекого краю: Король іржавих гір",
               "url": "https://anitube.in.ua/4495-saihate-no-paladin-tetsusabi-no-yama-no-ou.html"
             }
@@ -1547,9 +1610,9 @@
         "6.1.platforms": ["map"],
         "7.1.platforms": ["map"],
         "8.1.platforms": ["map"],
-        "9.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "9.1.platforms": ["map"],
         "10.1.platforms": ["map"],
-        "11.1.platforms": ["map"],
+        "11.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "12.1.platforms": ["map"],
         "13.1.platforms": ["map"],
         "14.1.platforms": ["map"],
@@ -1583,10 +1646,10 @@
         "42.1.platforms": ["map"],
         "43.1.platforms": ["map"],
         "44.1.platforms": ["map"],
-        "45.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "45.1.platforms": ["map"],
         "46.1.platforms": ["map"],
         "47.1.platforms": ["map"],
-        "48.1.platforms": ["map"],
+        "48.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
         "49.1.platforms": ["map"],
         "50.1.platforms": ["map"],
         "51.1.platforms": ["map"],
@@ -1610,7 +1673,10 @@
         "69.1.platforms": ["map"],
         "70.1.platforms": ["map"],
         "71.1.platforms": ["map"],
-        "72.1.platforms": ["map"]
+        "72.1.platforms": ["map"],
+        "73.1.platforms": ["map"],
+        "74.1.platforms": ["map"],
+        "75.1.platforms": ["map"]
       }
     ]
   }
