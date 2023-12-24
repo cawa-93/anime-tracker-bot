@@ -244,7 +244,7 @@
           [
             0,
             {
-              "episodes": { "released": 10, "total": null },
+              "episodes": { "released": 11, "total": 11 },
               "title": "Доктор Стоун: Новий світ (3 сезон 2 частина)",
               "url": "https://anitube.in.ua/4516-dr-stone-new-world-part-2.html"
             }
@@ -1021,7 +1021,7 @@
           [
             0,
             {
-              "episodes": { "released": 439, "total": null },
+              "episodes": { "released": 440, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
@@ -1612,7 +1612,7 @@
         "8.1.platforms": ["map"],
         "9.1.platforms": ["map"],
         "10.1.platforms": ["map"],
-        "11.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "11.1.platforms": ["map"],
         "12.1.platforms": ["map"],
         "13.1.platforms": ["map"],
         "14.1.platforms": ["map"],
