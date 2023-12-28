@@ -55,7 +55,7 @@
           [
             0,
             {
-              "episodes": { "released": 20, "total": 22 },
+              "episodes": { "released": 21, "total": 22 },
               "url": "https://anitube.in.ua/4338-dvchina-znizu.html",
               "title": "Дівчина знизу"
             }
@@ -202,7 +202,7 @@
           [
             0,
             {
-              "episodes": { "released": 11, "total": 12 },
+              "episodes": { "released": 12, "total": 12 },
               "url": "https://anitube.in.ua/4504-shodzhennya-mercya-smertelna-gra-chastina-2.html",
               "title": "Сходження мерця Смертельна гра (сезон 1, частина 2)"
             }
@@ -307,7 +307,7 @@
           [
             0,
             {
-              "episodes": { "released": 9, "total": 12 },
+              "episodes": { "released": 12, "total": 12 },
               "url": "https://anitube.in.ua/4490-ubivcya-goblnv-2-sezon.html",
               "title": "Винищувач гоблінів (2 сезон) / Убивця Гоблінів (2 сезон)"
             }
@@ -1021,7 +1021,7 @@
           [
             0,
             {
-              "episodes": { "released": 444, "total": null },
+              "episodes": { "released": 446, "total": null },
               "url": "https://anitube.in.ua/94-van-pis.html",
               "title": "Ван Піс / Великий куш"
             }
