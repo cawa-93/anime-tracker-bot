@@ -757,27 +757,6 @@
       }
     ],
     [
-      1606,
-      {
-        "list": {
-          "id": 1606,
-          "title": "Kekkaishi",
-          "num_episodes": 52,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 34, "total": 52 },
-              "title": "Майстри бар'єрів",
-              "url": "https://anitube.in.ua/3309-kekkaishi.html"
-            }
-          ]
-        ]
-      }
-    ],
-    [
       36699,
       {
         "list": {
@@ -835,27 +814,6 @@
               "episodes": { "released": 12, "total": 12 },
               "title": "Родом з Абіса. Золоте місто палаючого сонця",
               "url": "https://anitube.in.ua/4016-made-in-abyss-retsujitsu-no-ougonkyou.html"
-            }
-          ]
-        ]
-      }
-    ],
-    [
-      48417,
-      {
-        "list": {
-          "id": 48417,
-          "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
-          "num_episodes": 12,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 6, "total": 12 },
-              "url": "https://anitube.in.ua/4180-neviznaniy-v-akademyi-korolya-demonv-2-sezon.html",
-              "title": "Невизнаний в академії Короля Демонів (2 сезон)"
             }
           ]
         ]
@@ -1003,27 +961,6 @@
               "episodes": { "released": 12, "total": 12 },
               "url": "https://anitube.in.ua/2610-okultna-devyatka-occulticnine.html",
               "title": "Окультна дев'ятка"
-            }
-          ]
-        ]
-      }
-    ],
-    [
-      21,
-      {
-        "list": {
-          "id": 21,
-          "title": "One Piece",
-          "num_episodes": 0,
-          "status": { "kind": "watching", "episodes": { "watched": 1013 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 461, "total": null },
-              "url": "https://anitube.in.ua/94-van-pis.html",
-              "title": "Ван Піс / Великий куш"
             }
           ]
         ]
@@ -1649,7 +1586,7 @@
         "45.1.platforms": ["map"],
         "46.1.platforms": ["map"],
         "47.1.platforms": ["map"],
-        "48.1.platforms": ["map", { "0.1.episodes.total": ["undefined"] }],
+        "48.1.platforms": ["map"],
         "49.1.platforms": ["map"],
         "50.1.platforms": ["map"],
         "51.1.platforms": ["map"],
@@ -1673,10 +1610,7 @@
         "69.1.platforms": ["map"],
         "70.1.platforms": ["map"],
         "71.1.platforms": ["map"],
-        "72.1.platforms": ["map"],
-        "73.1.platforms": ["map"],
-        "74.1.platforms": ["map"],
-        "75.1.platforms": ["map"]
+        "72.1.platforms": ["map"]
       }
     ]
   }
