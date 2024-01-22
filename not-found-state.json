@@ -118,11 +118,29 @@
       }
     ],
     [
+      1606,
+      {
+        "id": 1606,
+        "title": "Kekkaishi",
+        "num_episodes": 52,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       39675,
       {
         "id": 39675,
         "title": "Ling Long: Incarnation",
         "num_episodes": 6,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      48417,
+      {
+        "id": 48417,
+        "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
+        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
@@ -133,6 +151,15 @@
         "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
         "num_episodes": 1,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      21,
+      {
+        "id": 21,
+        "title": "One Piece",
+        "num_episodes": 0,
+        "status": { "kind": "watching", "episodes": { "watched": 1013 } }
       }
     ],
     [
