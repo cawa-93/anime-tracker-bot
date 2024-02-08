@@ -46,15 +46,6 @@
       }
     ],
     [
-      42310,
-      {
-        "id": 42310,
-        "title": "Cyberpunk: Edgerunners",
-        "num_episodes": 10,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       2025,
       {
         "id": 2025,
@@ -140,6 +131,15 @@
       {
         "id": 48417,
         "title": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
+        "num_episodes": 12,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
+      55813,
+      {
+        "id": 55813,
+        "title": "Mashle: Shinkakusha Kouho Senbatsu Shiken-hen",
         "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
