@@ -211,48 +211,6 @@
       }
     ],
     [
-      48549,
-      {
-        "list": {
-          "id": 48549,
-          "title": "Dr. Stone: New World",
-          "num_episodes": 11,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 11, "total": 11 },
-              "title": "Доктор Стоун: Новий світ (3 сезон)",
-              "url": "https://anitube.in.ua/4280-dr-stone-new-world.html"
-            }
-          ]
-        ]
-      }
-    ],
-    [
-      55644,
-      {
-        "list": {
-          "id": 55644,
-          "title": "Dr. Stone: New World Part 2",
-          "num_episodes": 11,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 11, "total": 11 },
-              "title": "Доктор Стоун: Новий світ (3 сезон 2 частина)",
-              "url": "https://anitube.in.ua/4516-dr-stone-new-world-part-2.html"
-            }
-          ]
-        ]
-      }
-    ],
-    [
       49605,
       {
         "list": {
@@ -457,27 +415,6 @@
               "episodes": { "released": 13, "total": 13 },
               "title": "ID: Вторгнення",
               "url": "https://anitube.in.ua/3524-idinvaded.html"
-            }
-          ]
-        ]
-      }
-    ],
-    [
-      49220,
-      {
-        "list": {
-          "id": 49220,
-          "title": "Isekai Ojisan",
-          "num_episodes": 13,
-          "status": { "kind": "planned", "episodes": { "watched": 0 } }
-        },
-        "platforms": [
-          [
-            0,
-            {
-              "episodes": { "released": 13, "total": 13 },
-              "title": "Дядечко з іншого світу",
-              "url": "https://anitube.in.ua/4014-isekai-ojisan.html"
             }
           ]
         ]
@@ -1607,10 +1544,7 @@
         "66.1.platforms": ["map"],
         "67.1.platforms": ["map"],
         "68.1.platforms": ["map"],
-        "69.1.platforms": ["map"],
-        "70.1.platforms": ["map"],
-        "71.1.platforms": ["map"],
-        "72.1.platforms": ["map"]
+        "69.1.platforms": ["map"]
       }
     ]
   }
