@@ -100,15 +100,6 @@
       }
     ],
     [
-      50339,
-      {
-        "id": 50339,
-        "title": "Kakegurui Twin",
-        "num_episodes": 6,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
       1606,
       {
         "id": 1606,
@@ -132,15 +123,6 @@
         "id": 39675,
         "title": "Ling Long: Incarnation",
         "num_episodes": 6,
-        "status": { "kind": "planned", "episodes": { "watched": 0 } }
-      }
-    ],
-    [
-      48417,
-      {
-        "id": 48417,
-        "title": "Maou Gakuin no Futekigousha II: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou",
-        "num_episodes": 12,
         "status": { "kind": "planned", "episodes": { "watched": 0 } }
       }
     ],
