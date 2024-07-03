@@ -1,6 +1,15 @@
 {
   "json": [
     [
+      55791,
+      {
+        "id": 55791,
+        "title": "\"Oshi no Ko\" 2nd Season",
+        "num_episodes": 13,
+        "status": { "kind": "planned", "episodes": { "watched": 0 } }
+      }
+    ],
+    [
       19429,
       {
         "id": 19429,
